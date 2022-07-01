@@ -4,20 +4,19 @@ import {Link} from "../routes";
 
 const Header = () => {
   return (
-    <Menu style={{ marginTop: '10px' }}>
+    <Menu secondary style={{marginTop: '10px'}}>
       <Link route="/">
-        <a className="item">Kickstart</a>
+        <a className="item" style={{fontWeight: "bold"}}>Kickstart</a>
       </Link>
 
       <Menu.Menu position="right">
       <Link route="/">
-        <a className="item">Campaigns</a>
+        <a className="item" style={{fontWeight: "bold"}}>Campaigns</a>
       </Link>
       <Link route="/campaigns/new">
-        <a className="item">+</a>
+        <a className="item" style={{fontWeight: "bold"}}>+</a>
       </Link>
       </Menu.Menu>
-
     </Menu>
   );
 };
